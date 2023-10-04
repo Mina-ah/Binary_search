@@ -1,5 +1,6 @@
 /******************************************************************************
 TO FIND THE FLOOR OF AN ELEMENT
+Floor of a value means the greatest value which is less than value
 1:if the given value to search is 5 and the array contains values such as 1,2,3,4,6,7 then the floor would
 be 4...
 2:suppose if the key is present then we are gonna return the key like in normal case
