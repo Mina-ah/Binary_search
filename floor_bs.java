@@ -19,7 +19,7 @@ public class Main
         int res=0;
         while(start<=end){
             int mid=start+(end-start)/2;
-            if(nums[mid]==target) return mid;
+            if(nums[mid]==target) return nums[mid];
             if(nums[mid]<target){
                 res=nums[mid];
                 start=mid+1;
@@ -32,8 +32,6 @@ public class Main
 	    int[] nums={1,2,3,4,6,7,8,9,30};
 	    int target=3;
 	    int val=floor_bs(nums,target);
-	    if(val!=target)
 	    System.out.println("the floor of the value is:  "+val);
-	    else System.out.println("the element is found at index :  "+val);
 	}
 }
