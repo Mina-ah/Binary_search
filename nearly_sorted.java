@@ -1,8 +1,8 @@
 /******************************************************************************
-TO FIND THE FLOOR OF AN ELEMENT
-if the given value to search is 5 and the array contains values such as 1,2,3,4,5,6,7 then the floor would
-be 4...
-we will store the value of mid in res 
+TO FIND AN ELEMENT IN NEARLY SORTED ARRAY
+if target can be at mid
+mid+1
+or mid-1
 
 *******************************************************************************/
 
