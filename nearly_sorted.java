@@ -1,9 +1,8 @@
 /******************************************************************************
-SEARCHING IN NEARLY SORTED ARRAY
-which means the key element can be at different positions 
-1 at mid 
-2 at mid-1
-3 at mid+1
+TO FIND THE FLOOR OF AN ELEMENT
+if the given value to search is 5 and the array contains values such as 1,2,3,4,5,6,7 then the floor would
+be 4...
+we will store the value of mid in res 
 
 *******************************************************************************/
 
@@ -15,8 +14,8 @@ public class Main
         while(start<=end){
             int mid=start+(end-start)/2;
             if(nums[mid]==target) return mid;
-            if(nums[mid+1]==target) return mid+1;
-            if(nums[mid-1]==target) return mid-1;
+            if(mid+1<=end && nums[mid+1]==target) return mid+1;
+            if(mid-1>=start && nums[mid-1]==target) return mid-1;
             else if(target<nums[mid]) end=mid-2;  
             else start=mid+2;
         }
@@ -24,7 +23,7 @@ public class Main
     }
 	public static void main(String[] args) {
 	    int[] nums={5, 4, 3, 6, 9, 8, 7, 13, 10};
-	    int target=5;
+	    int target=10;
 	    int val=nearly_sorted(nums,target);
 	    if(val==-1)
 		System.out.println("element not found");
