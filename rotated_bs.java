@@ -1,4 +1,5 @@
 /******************************************************************************
+
  we are saying if an rotated sorted array is given lets say {11,12,15,18,2,5,8,6}
  we are first finding the mid which is 18 then we are checking if the mid >end 
  if yes change start=mid+1
